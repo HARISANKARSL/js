@@ -1,0 +1,213 @@
+/* navbar */
+body{
+    scroll-behavior: unset;
+}
+.navbar{
+    height: 100px;
+    background-color: white;
+}
+.navbar .navbar-brand {
+    font-size: 30px;
+}
+.nav-link{
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+}
+
+   
+  
+
+/* home */
+#home {
+    background-color: rgb(235, 235, 235);
+    height: 100vh;
+}
+#home h1{
+    padding-top: 22rem;
+    font-family: 'Amatic SC', cursive;
+}
+.container-fluid h3{
+    font-family: 'Amatic SC', cursive; 
+}
+.about-card{
+    background-color: rgb(235, 235, 235);  
+}
+.card .fa-solid{
+    background-color: rgba(232, 141, 125, 0.704);
+    font-size: 25px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+  justify-content: center;
+  padding-top: 10px;
+  border-radius: 50%;
+    
+}
+.background{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./bg1.jpg") center center fixed;
+height: 400px;
+background-repeat:no-repeat ;
+background-size: cover;
+margin-top: 10px;
+}
+.cols{
+    margin-top: 150px;
+}
+#testimonials{
+    background-color: rgb(235, 235, 235);  
+    height: 100vh; 
+    display: flex;align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#chefs{
+    background-color: rgb(235, 235, 235);  
+    width: 100vh;
+}
+
+
+
+.card-flip{
+    width: 350px;
+    height: 400px;
+
+    perspective: 1000px;
+    cursor: pointer;
+    border: none;
+}
+.inner-box{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transition: transform 1s;
+    transform-style:preserve-3d ;
+}
+.card-front, .card-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+}
+.card-front{
+   
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.front-1{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(./chefs-1.jpg);
+    width: 100%;
+    height: 100%;
+    
+}
+.front-2{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(./chefs-2.jpg);
+    width: 100%;
+    height: 100%;
+}
+.front-3{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(./chefs-3.jpg);
+    width: 100%;
+    height: 100%;
+}
+.name{
+    display: inline-block;
+    width: 50%;
+    padding: 15px;
+    margin-top: 300px;
+    border-radius: 10px;
+    background: rgb(235, 233, 233);
+    color: #333;
+}
+.card-back{
+    
+    box-shadow: -1px 3px 9px 0px rgba(0,0,0,0.75);
+    transform: rotateY(180deg);
+}
+.card-flip:hover .inner-box{
+    transform: rotateY(-180deg);
+}
+.detail{
+    display: inline-block;
+    color: white;
+    padding-bottom: 10px;
+    border-bottom: 1px solid white;
+    margin-top: 140px; 
+}
+.modal-content {
+ height: 550px;
+ width: 450px;
+
+   
+}
+.modal-title{
+    margin-left: 60px;
+}
+.modal-body ul li{
+    padding-top: 30px;
+}
+.modal-body ul li a{
+  text-decoration: none;
+  margin-left: 40px;
+   
+}
+.modal-body li a {
+    border: 1px solid black;
+     
+  }
+.modal-body ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 320px;
+    height: 40px;
+  }
+  .text-popup{
+   margin-right: 20px;
+ 
+  }
+  .input-sec input{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+    
+    width: 250px;
+  }
+  .input-sec input:focus{
+    border-bottom: 1px solid red;
+  }
+ 
+#reserved{
+    background-color: rgb(235, 235, 235); 
+       
+}
+form{
+    margin-top: 100px;
+    margin-left: 20px;
+  
+    
+}
+form input{
+    height: 50px;
+    width: 250px;
+    outline: none;
+    margin-left:15px ;
+    border: none;
+    border: 1px solid rgb(149, 139, 139);
+
+ 
+ 
+}
+form input :focus{
+    border: 1px solid red;
+}
+#text-area{
+    margin-left: 10px;
+}
+.btn-form{
+    margin-left: 100px;
+    transition: 0.4s;
+}

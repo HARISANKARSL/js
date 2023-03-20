@@ -1,0 +1,28 @@
+
+nav{
+    background-color: rgba(0, 0, 0, 0.695);
+}
+#center-sec{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    height: 100vh;
+    background: url(./istockphoto-1282505760-612x612.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+}
+#img-sec{
+    display: flex;
+  align-items: center;
+    height: 80vh;
+}
+#footer{
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}

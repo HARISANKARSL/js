@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="wrapper" id="blur">
+    <div class="header">
+        <h1>Login</h1>
+    </div>
+    <div class="login">
+       
+    <div class="login-input">
+        <label for="username">Username</label> <br>
+        <i class="fa-regular fa-user"></i>
+        <input type="text" placeholder="Type Your Username" id="name" minlength="3" maxlength="15" required>
+    </div>
+    <div class="login-input">
+        <label for="username">Password</label> <br>
+        <i class="fa-solid fa-lock"></i>
+        <input type="password" id="pass" placeholder="Type Your Password" maxlength="12" re>
+    </div>
+    <div class="frgt">
+        <a href="#" id="frgotpass" onclick="forgotPass()">Forgot password?</a>
+    </div>
+    <div class="login-btn">
+        <button id="login" onclick="signup()">Login</button>
+    </div>
+    <div id="notify" class="msg">
+        <p >Enter your email and password</p>
+    </div>
+    <div class="lgn-icon" id="logn">
+        <p >Or Signup Using</p>
+        <div class="icons">
+            <ul>
+                <li><a href=""></a><i class="fa-brands fa-facebook-f "></i></li>
+                <li><a href=""></a><i class="fa-brands fa-twitter "></i></li>
+                <li><a href=""></a><i class="fa-brands fa-google"></i></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <p>Or Signup Using</p>
+    <a href="#">Sign Up</a>
+</div>
+</div>
+<!-- forgot pass -->
+<div class="frgt-pss">
+    <div class="frgt">
+        <div class="frgt-header">
+            <h1>Forgot Password</h1> <span class="close" onclick="frgtclose()">x</span>
+            <h3>Enter your email adress</h3>
+         
+        </div>
+        <div class="login-msg" id="lognmsg">
+            <p >Please enter your email  <i class="fa-solid fa-circle-exclamation error"></i></p>
+        </div>
+        <div class="frgt-imput">
+            <input type="email" id="frgtimput" placeholder="Enter email adress" required>
+        </div>
+        <div class="frgt-btn">
+            <button id="frgt-cntinue"  onclick="submitbtn()">Continue</button>
+        </div>
+    </div>
+</div>
+<!--  -->
+<div class="rset-pss">
+    <div class="rset">
+        <div class="rset-header">
+
+          <h1>OTP Verification</h1> <span class="rset-close" onclick=" clspop()">x</span>
+          <p id="verification"></p>
+
+        </div>
+        <div class="loginmsg" id="logn-msg">
+            <p >Please enter verifation code <i class="fa-solid fa-circle-exclamation error"></i></p>
+        </div>
+     <div class="rset-imput">
+          <input type="text" placeholder="Enter email verification" id="output">
+        </div>
+    
+    <div class="rset-btn">
+            <button onclick="clspopup()">Submit</button>
+    </div>
+    </div>
+</div>
+<script src="https://kit.fontawesome.com/6e0226e991.js" crossorigin="anonymous"></script>
+<script src="index.js"></script>
+</body>
+</html>
+  

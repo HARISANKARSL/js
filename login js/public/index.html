@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>YUMMY.</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/6e0226e991.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<!-- navbar -->
+<nav class="navbar navbar-expand-lg bg-light sticky-top">
+	<div class="container" >
+	  <a class="navbar-brand font-weight-bold" href="#"><b>YUMMY<span class="text-danger">.</span></b> </a>
+	  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav m-auto ml-2 mb-lg-0 ">
+		  <li class="nav-item me-3  ">
+			<a class="nav-link active " aria-current="page" href="#home">Home</a>
+		  </li>
+		  <li class="nav-item me-3">
+			<a class="nav-link  text-secondary " aria-current="page" href="#about">About</a>
+		  </li>
+		  <li class="nav-item me-3">
+			<a class="nav-link  text-secondary " aria-current="page" href="#menu">Menu</a>
+		  </li>
+		  <li class="nav-item me-3">
+			<a class="nav-link  text-secondary " aria-current="page" href="#event">Events</a>
+		  </li>
+		  <li class="nav-item me-3">
+			<a class="nav-link  text-secondary " href="#chef">Chefs</a>
+		  </li>
+		  <li class="nav-item me-3">
+			<a class="nav-link   text-secondary " aria-current="page" href="#gallery">Gallery</a>
+		  </li>
+		  <li class="nav-item dropdown me-3">
+			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+			  Dropdown
+			</a>
+			<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+			  <li><a class="dropdown-item  text-secondary " href="#">Action</a></li>
+			  <li><a class="dropdown-item  text-secondary " href="#">Another action</a></li>
+			 
+			  <li><a class="dropdown-item  text-secondary " href="#">Something else here</a></li>
+			</ul>
+		  </li>
+		  <li class="nav-item me-3">
+			<a class="nav-link   text-secondary" href=""> Contact</a>
+		  </li>
+		</ul>
+	
+		<button class="btn btn-danger rounded-pill btn-md" type="submit" data-bs-toggle="modal" data-bs-target="#myModal">Book a Table</button>
+	  </div>
+	 
+	</div>
+  </nav>
+  <!-- popup -->
+ 
+
+
+  <div class="modal fade mt-5" id="myModal" data-bs-backdrop="static"  >
+	<div class="modal-dialog ">
+	  <div class="modal-content hover ">
+		<div class="modal-header border-0">
+		  <h5 class="modal-title  text-secondary text-center mx-auto pt-3" >Get Started</h5>
+		  <button type="button" class="btn-close m-0 border-0 outline-0 mb-3" data-bs-dismiss="modal"></button>
+		</div>
+		<div class="modal-body border-0">
+         <ul class="list-unstyled">
+			
+			<li class=" "><a class="text-center block"  href=""><img src="./googlelogo (1).svg" alt=""><span class="text-popup block text-secondary">Continue with Google</span></a></li >
+			<li><a  href=""><img src="./email (1).svg" alt=""><span class="text-popup block text-secondary">Continue with Email</span></a></li>
+			<li><a  href=""><i class="fa-brands fa-apple text-dark"></i><span class="text-popup block text-secondary">Continue with Apple</span></a></li>
+		 </ul>
+
+		 <p class="text-center mt-5">OR</p>
+		 <div class="input-sec justify-content-center me-5  text-center ">
+		 <img src="./indianflag.svg" class="ms-3" alt=""><label for="number">+91</label>
+		 <input type="tel" class="  " placeholder="Continue with mobile">
+		</div>
+		</div>
+		<div class="footer">
+		 <p class="text-center"><small>I agree to the <u>Terms & Conditions</u> & <u>Privacy Policy </small> </u></p>
+		</div>
+	  </div>
+	</div>
+  </div>
+	  </div>
+	
+
+
+  
+
+
+
+  <!-- home -->
+<div class="container-fluid" id="home"   >
+	<div class="container"  data-aos="fade-up" data-aos-duration="1000" >
+		<img class="float-end img-fluid pt-2  mt-5" src="./hero-img.png" alt="">
+		<h1 class="align-justify ms-5">Enjoy Your Healthy <br>
+			Delicious Food</h1>
+		<p class="align-justify ms-5 text-secondary">Sed autem laudantium dolores. Voluptatem itaque ea consequatur <br> eveniet. Eum quas beatae cumque eum quaerat.</p>
+		<button class="btn btn-danger rounded-pill ms-5 mt-3">Book a Table</button>
+	</div>
+</div>
+
+<!-- about -->
+
+
+
+<div class="container-fluid" id="about"  data-aos="fade-up" data-aos-duration="1000" >
+	<p class="text-center text-secondary pt-5">ABOUT</p>
+	<h3 class="text-center ">Learn More <span class="text-danger">About Us</span></h3>
+</div>
+<div class="container" >
+	<div class="row">
+		<div class="col-sm-12 col-lg-7"  data-aos="fade-right"  data-aos-duration="1000"  >
+          <img class="pt-2" src="./about.jpg" alt="" width="100%" height="600px">
+		</div>
+		<div class="col-sm-12 col-lg-5"  data-aos="fade-left"  data-aos-duration="1000" >
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			<p><i class="fa-solid fa-check-double text-danger"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			<p><i class="fa-solid fa-check-double text-danger"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			<p><i class="fa-solid fa-check-double text-danger"></i> Ullamco laboris nisi ut aliquip Ullamco laboris nisi ut aliquip ex ea commodo consequat Ullamco laboris nisi ut aliquip .</p>
+			<img class="pb-2" src="./about-2.jpg" alt="" height="400px" width="100%">
+		</div>
+	</div>
+</div>
+<!-- about-card -->
+<div class="container-fluid about-card mt-5" >
+	<div class="container ">
+		<div class="row">
+			<div class="col-lg-6 mt-3"  data-aos="zoom-in" data-aos-duration="1000" >
+				<div class="card bg-danger mb-3" style="width: 100%; height:400px">
+					<div class="card-body">
+					  <h2 class="card-title mt-5 text-light">Why Choose <br> Yummy?</h2>
+					  
+					  <p class="card-text mt-4 text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos explicabo voluptatem dolorum tempore minima sint quod voluptatum distinctio laboriosam voluptas mollitia fugit rem esse, doloribus sapiente! Explicabo aspernatur laboriosam tempore?</p>
+					  <button class="btn btn-outline-light">Read More</button>
+					</div>
+				  </div>
+			</div>
+			<div class="col-lg-2 mt-5" data-aos="zoom-in" data-aos-duration="1000">
+				<div class="card pt-3" style="width: 100%; height:320px">
+					<div class="card-body">
+					  <h5 class="card-title icon-box d-flex flex-column justify-content-center align-items-center"><i class="fa-solid fa-gem text-danger"></i></h5>
+					  <h4 class="card-subtitle mb-2 text-muted">Ullamco laboris</h4>
+					  <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur incidunt vel est dolor perferendis. </p>
+					  
+					</div>
+				  </div>
+			</div>
+			<div class="col-lg-2 mt-5" data-aos="zoom-in" data-aos-duration="1000">
+				<div class="card pt-3" style="width: 100%; height:320px">
+					<div class="card-body ">
+						<h5 class="card-title icon-box d-flex flex-column justify-content-center align-items-center"><i class="fa-solid fa-clipboard-list text-danger"></i></h5>
+					  <h4 class="card-subtitle mb-2 text-muted">Corporis voluptates </h4>
+					  <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur incidunt vel est dolor perferendis.</p>
+					  
+					</div>
+				  </div>
+			</div>
+			<div class="col-lg-2 mt-5" data-aos="zoom-in" data-aos-duration="1000"data-aos="zoom-in" data-aos-duration="1000">
+				<div class="card pt-3" style="width: 100%; height:320px">
+					<div class="card-body">
+						<h5 class="card-title icon-box d-flex flex-column justify-content-center align-items-center"><i class="fa-solid fa-box-check"></i></h5>
+					  <h4 class="card-subtitle mb-2 text-muted">Labore consequatur </h4>
+					  <p class="card-text text-secondary">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur incidunt vel est dolor perferendis. </p>
+					 
+					</div>
+				  </div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- count -->
+<div class="container-fluid background"  >
+	<div class="container">
+<div class="row">
+	<div class="col-3 cols">
+		<h1 class="text-light text-center" id="number1">254</h1>
+		<p class="text-light text-center">Clients</p>
+	</div>
+	<div class="col-3  cols">
+		<h1 class="text-light text-center"  id="number2">514</h1>
+		<p class="text-light text-center">Projects</p>
+	</div>
+	<div class="col-3  cols">
+		<h1 class="text-light text-center"  id="number3">2544</h1>
+		<p  class="text-light text-center"> Hours of Support</p>
+	</div>
+	<div class="col-3  cols">
+		<h1 class="text-light text-center"  id="number4">54</h1>
+		<p class="text-light text-center ">Workers</p>
+	</div>
+</div>
+</div>
+</div>
+
+<!-- menu -->
+<div class="container-fluid mt-5 pt-3" id="menu" >
+	<p class="text-center text-secondary mt-5 " data-aos="fade-up" data-aos-duration="1000">OUR MENU</p>
+	<h3 class="text-center mt-3  " data-aos="fade-up" data-aos-duration="1000">Check Our  <span class="text-danger">Yummy Menu</span></h3>
+	<ul class=" list-unstyled text-center  ">
+		<li class="text-center mt-5 " data-aos="fade-up" data-aos-duration="1000"><a  class="    text-decoration-none " href="#menu"><span class="text-danger p-1 border-bottom border-danger">Starters</span>  <span class="p-1 text-secondary border-bottom">Breakfast</span>  <span class="p-1 text-secondary border-bottom">Lunch</span> <span class="p-1 text-secondary border-bottom">Dinner</span></a></li>
+		
+	
+	</ul>
+	<h5 class="text-center text-secondary mt-5" data-aos="fade-up" data-aos-duration="1000">MENU</h5>
+	<h4 class="text-center text-danger mt-2" data-aos="fade-up" data-aos-duration="1000"><strong>Starters</strong></h4>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12 col-md-4 col-lg-4" data-aos="fade-up" data-aos-duration="1000">
+				<img src="./menu-item-1.png" class="img-fluid" alt="">
+				<h4 class="text-center">Magnam Tiste</h4>
+				<p class="text-center text-secondary">Lorem, deren, trataro, filede, nerada</p>
+				<h4 class="text-center text-danger">$5.95</h4>
+			</div>
+			<div class="col-sm-12 col-md-4 col-lg-4" data-aos="fade-up" data-aos-duration="1000">
+				<img src="./menu-item-2.png" class="img-fluid" alt="">
+				<h4 class="text-center">Aut Luia</h4>
+				<p class="text-center text-secondary">Lorem, deren, trataro, filede, nerada</p>
+				<h4 class="text-center text-danger">$14.95</h4>
+			</div>
+			<div class="col-sm-12 col-md-4 col-lg-4" data-aos="fade-up" data-aos-duration="1000">
+				<img src="./menu-item-3.png" class="img-fluid" alt="">
+				<h4 class="text-center">Est Eligendi</h4>
+				<p class="text-center text-secondary">Lorem, deren, trataro, filede, nerada</p>
+				<h4 class="text-center text-danger">$8.95</h4>
+			</div>
+			
+			
+			
+		</div>
+		<div class="row">
+			<div class="col-sm-12 col-md-4 col-lg-4" data-aos="fade-up" data-aos-duration="1000">
+				<img src="./menu-item-4.png" class="img-fluid" alt="">
+				<h4 class="text-center">Eos Luibusdam</h4>
+				<p class="text-center text-secondary">Lorem, deren, trataro, filede, nerada</p>
+				<h4 class="text-center text-danger">$12.95</h4>
+			</div>
+			<div class="col-sm-12 col-md-4 col-lg-4" data-aos="fade-up" data-aos-duration="1000">
+				<img src="./menu-item-5.png" class="img-fluid" alt="">
+				<h4 class="text-center">Eos Luibusdam</h4>
+				<p class="text-center text-secondary">Lorem, deren, trataro, filede, nerada</p>
+				<h4 class="text-center text-danger">$14.95</h4>
+			</div>
+			<div class="col-sm-12 col-md-4 col-lg-4" data-aos="fade-up" data-aos-duration="1000">
+				<img src="./menu-item-6.png" class="img-fluid" alt="">
+				<h4 class="text-center">Laboriosam Direva</h4>
+				<p class="text-center text-secondary">Lorem, deren, trataro, filede, nerada</p>
+				<h4 class="text-center text-danger">$9.95</h4>
+			</div>
+			
+			
+			
+		</div>
+	</div>
+		  
+		  </div>
+		  
+</div>
+</div>
+<!-- testimonials -->
+<div class="container-fluid " id="testimonials" >
+	<p class=" text-secondary text-center " data-aos="fade-up" data-aos-duration="1000">TESTIMONIALS</p>
+	<h3 class="text-center   " data-aos="fade-up" data-aos-duration="1000">What Are They  <span class="text-danger">Saying About Us</span></h3>
+	<div class="container "data-aos="fade-up" data-aos-duration="1000">
+		<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+			<div class="carousel-indicators">
+			  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active btn rounded-circle" style="width: 20px; height:20px" aria-current="true" aria-label="Slide 1"></button>
+			  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="active btn rounded-circle" aria-label="Slide 2" style="width: 20px; height:20px"></button>
+			  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="active btn rounded-circle" aria-label="Slide 3" style="width: 20px; height:20px"></button>
+			  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" class="active btn rounded-circle" aria-label="Slide 4" style="width: 20px; height:20px"></button>
+			</div>
+			<div class="carousel-inner ">
+				
+			  <div class="carousel-item active  ">
+				<div class="row m-5">
+					<div class="col-sm-12 col-md-8 col-lg-8">
+				<p class="mt-3 "><i class="fa-solid fa-quote-left text-danger"></i> Export tempor illum tamen malis malis eram quae irure esse labore quem <br> cillum quid cillum eram malis quorum velit fore eram  velit sunt  <br>aliqua noster fugiat irure amet legam anim culpa. <i class="fa-solid fa-quote-right text-danger"></i></p>
+				<div class="caraoul-bottom">
+					<h4>Saul Goodman</h4>
+					<h6 class="text-secondary">Ceo & founder</h6>
+					<i class="fa-solid fa-star text-warning"></i>
+				<i class="fa-solid fa-star text-warning"></i>
+				<i class="fa-solid fa-star text-warning"></i>
+				<i class="fa-solid fa-star text-warning"></i>
+				<i class="fa-solid fa-star text-warning"></i>
+				</div>
+				
+			</div>
+			<div class="col-sm-12 col-md-4 col-lg-4">
+				<img src="./testimonials-1.jpg" class="img-fluid  rounded-circle" style="width:200px ; height:200px" alt="...">
+			</div>
+			</div>
+			  </div>
+			  <div class="carousel-item">
+				<div class="row">
+					<div class="col-sm-12 col-md-8 col-lg-8 ">
+						<p class=" mt-3"><i class="fa-solid fa-quote-left text-danger"></i> Export tempor illum tamen malis malis eram quae irure esse labore quem <br> cillum quid cillum eram malis quorum velit fore eram  velit sunt  <br>aliqua noster fugiat irure amet legam anim culpa.<i class="fa-solid fa-quote-right text-danger"></i> </p>
+						<div class="caraoul-bottom">
+							<h4 class="">Sara Wilsson</h4>
+							<h6 class="text-secondary">Designer</h6>
+							<i class="fa-solid fa-star text-warning"></i>
+				<i class="fa-solid fa-star text-warning"></i>
+				<i class="fa-solid fa-star text-warning"></i>
+				<i class="fa-solid fa-star text-warning"></i>
+				<i class="fa-solid fa-star text-warning"></i>
+						</div>
+			</div>
+			<div class=" col-sm-12 col-md-4 col-lg-4">
+				<img src="./testimonials-2.jpg" class="img-fluid   rounded-circle" style="width:200px ; height:200px" alt="...">
+			</div>
+			</div>
+			
+			
+			</div>
+			<div class="carousel-item">
+				<div class="row">
+					<div class="col-sm-12 col-md-8 col-lg-8 ">
+						<p class="mt-3 "><i class="fa-solid fa-quote-left text-danger"></i> Export tempor illum tamen malis malis eram quae <br> irure esse labore quem  cillum quid cillum eram malis quorum velit fore eram  velit sunt  <br>aliqua noster fugiat irure amet legam anim culpa.<i class="fa-solid fa-quote-right text-danger"></i> </p>
+							<div class="caraoul-bottom">
+							<h4>Jena Karlis</h4>
+							<h6 class="text-secondary">Store Owner</h6>
+							<i class="fa-solid fa-star text-warning"></i>
+				<i class="fa-solid fa-star text-warning"></i>
+				<i class="fa-solid fa-star text-warning"></i>
+				<i class="fa-solid fa-star text-warning"></i>
+				<i class="fa-solid fa-star text-warning"></i>
+						</div>
+			</div>
+			<div class=" col-sm-12 col-md-4 col-lg-4">
+				<img src="./testimonials-3.jpg" class="img-fluid   rounded-circle" style="width:200px ; height:200px" alt="...">
+			</div>
+			</div>
+			
+			
+			</div>
+			<div class="carousel-item ">
+				<div class="row">
+					<div class="col-sm-12 col-md-8 col-lg-8">
+						<p class="mt-3 "><i class="fa-solid fa-quote-left text-danger"></i> Export tempor illum tamen malis malis eram quae irure esse labore quem  <br> cillum quid cillum eram malis quorum velit fore eram  velit sunt  <br>aliqua noster fugiat irure amet legam anim culpa.<i class="fa-solid fa-quote-right text-danger"></i> </p>
+						<div class="caraoul-bottom">
+							<h4>John Larson</h4>
+							<h6 class="text-secondary">Entrepreneur</h6>
+							<i class="fa-solid fa-star text-warning"></i>
+				<i class="fa-solid fa-star text-warning"></i>
+				<i class="fa-solid fa-star text-warning"></i>
+				<i class="fa-solid fa-star text-warning"></i>
+				<i class="fa-solid fa-star text-warning"></i>
+						</div>
+			</div>
+			<div class=" col-sm-12 col-md-4 col-lg-4 ">
+				<img src="./testimonials-4.jpg" class="img-fluid    rounded-circle" style="width:200px ; height:200px" alt="...">
+			</div>
+			</div>
+			
+			
+			</div>
+			</div>
+			  </div>
+				
+			  </div>
+			</div>
+
+
+			<!-- Events -->
+			<div class="container-fluid pt-3 " id="event" data-aos="fade-up" data-aos-duration="1000">
+				<p class=" text-secondary text-center mt-5">EVENTS</p>
+				<h3 class="text-center   ">Share <span class="text-danger">Your Moments</span>  In Our Restaurant  </h3>
+				<div class="owl-carousel owl-theme">
+				
+					<div class="item">
+						
+							<div class="card bg-dark text-white">
+								<img class="card-img" src="./events-1.jpg" alt="Card image" height="500px">
+								<div class="card-img-overlay ">
+									<h3 class="card-title py-5 my-5"><b>CUSTUM PARTIES</b></h3>
+									<h3 class="card-title"><span class=" border-bottom border-danger"><b>$99</b></span></h3>
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, in! Nostrum harum unde perferendis autem fugiat tempore expedita nemo fuga maiores, eaque corrupti nisi sequi adipisci inventore, temporibus nobis illum!</p>
+
+								</div>
+							</div>
+					
+						  </div>
+						  <div class="item">
+						
+							<div class="card  text-white bg-light">
+								<img class="card-img" src="./events-2.jpg" alt="Card image"height="500px">
+								<div class="card-img-overlay ">
+									<h3 class="card-title py-5 my-5">PRIVATE PARTIES</h3>
+									<h3 class="card-title"><span class=" border-bottom border-danger"><b>$399</b></span></h3>
+									<p>Quo corporis voluptas ea ad. Consectetur inventore sapiente ipsum voluptas eos omnis facere. Enim facilis veritatis id est rem repudiandae nulla expedita quas.</p>
+
+								</div>
+							</div>
+					
+						  </div>
+						  <div class="item">
+						
+							<div class="card bg-dark text-white">
+								<img class="card-img" src="./events-3.jpg" alt="Card image" height="500px">
+								<div class="card-img-overlay ">
+									<h3 class="card-title py-5 my-5">BIRTHDAY PARTIES</h3>
+									<h3 class="card-title " ><span class=" border-bottom border-danger"><b>$499</b></span></h3>
+									<p> Quo corporis voluptas ea ad. Consectetur inventore sapiente ipsum voluptas eos omnis facere. Enim facilis veritatis id est rem repudiandae nulla expedita quas.</p>
+
+								</div>
+							</div>
+					
+						  </div>
+					</div>
+				
+					
+
+					
+				</div>
+		<!-- chefs -->
+			<div class="container-fluid" id="chef" data-aos="fade-up" data-aos-duration="1000">
+				
+					<p class=" text-secondary text-center mt-5 pt-5">CHEFS</p>
+					<h3 class="text-center   ">ShOur <span class="text-danger">Proffesional </span>  Chefs   </h3>
+					<div class="container mt-5">
+						<div class="row mt-5 ">
+							<div class=" box-item col-md-4 sm-p-5">
+                           <div class="card card-fluid  card-deck card-flip ">
+							<div class="inner-box text-center">
+								<div class="card-front front-1">
+                                 <span class="name ">Walter White</span>
+								</div>
+								<div class="card-back bg-danger">
+									<h4 class="detail">Master Chef</h4>
+										<p >Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minima enim corporis et voluptate.</p>
+									<span class="social-media">
+									  <i class="fa-brands fa-facebook text-light"></i>
+									  <i class="fa-brands fa-twitter text-light"></i>
+									  <i class="fa-brands fa-instagram-square text-light"></i>
+									  <i class="fa-brands fa-dribbble text-light"></i>
+									  
+								  
+								  </span>
+								</div>
+							</div>
+						   </div>
+							</div>
+							<div class="col-sm-12 box-item col-md-4 ">
+								<div class="card  card-deck card-flip">
+								 <div class="inner-box text-center">
+									 <div class="card-front front-2" >
+									  <span class="name">Sarah Jhonson</span>
+									 </div>
+									 <div class="card-back bg-danger">
+									  <h4 class="detail">Patissier </h4>
+									  <p>Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minima enim corporis et voluptate.</p>
+									  <span class="social-media">
+										<i class="fa-brands fa-facebook text-light"></i>
+										<i class="fa-brands fa-twitter text-light"></i>
+										<i class="fa-brands fa-instagram-square text-light"></i>
+										<i class="fa-brands fa-dribbble text-light"></i>
+										
+									
+									</span>
+									 </div>
+								 </div>
+								</div>
+								 </div>
+								 <div class="col-sm-12 box-item col-md-4 ">
+									<div class="card card-deck card-flip">
+									 <div class="inner-box text-center">
+										 <div class="card-front front-3" >
+										  <span class="name">William Anderson</span>
+										 </div>
+										 <div class="card-back bg-danger">
+											<h4 class="detail">Cook </h4>
+												<p> Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minima enim corporis et voluptate.</p>
+												<span class="social-media text-light">
+													<i class="fa-brands fa-facebook text-light"></i>
+													<i class="fa-brands fa-twitter text-light"></i>
+													<i class="fa-brands fa-instagram-square text-light"></i>
+													<i class="fa-brands fa-dribbble text-light"></i>
+													
+												
+												</span>
+										  
+										 </div>
+									 </div>
+									</div>
+									 </div>
+						</div>
+					</div>
+				</div>
+				<!-- book a table -->
+		    <div class="container-fluid pt-5 " data-aos="fade-up" data-aos-duration="1000">
+				<p class=" text-secondary text-center ">BOOK A TABLE</p>
+					<h3 class="text-center   ">Book <span class="text-danger">Your Stay  </span>  With Us  </h3>
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-12 col-md-4">
+                              <img src="./reservation.jpg" class="img-fluid" alt="">
+							</div>
+							<div class="col-sm-12 col-md-8 justify-content-center" id="reserved">
+						<form class="form-floating ">
+								<input type="text" class="sm-mt-3" placeholder="Your Name">
+								<input type="email" class="sm-mt-3" placeholder="Your Email">
+								<input type="tel" placeholder="Your Phone">
+								<br><br>
+								<input type="tel" placeholder="Date">
+								<input type="tel" placeholder="Time">
+								<input type="tel" placeholder="#Off People">
+								<br><br>
+								<textarea class="" name="textarea" id="text-area" cols="35" rows="5" placeholder="Message"></textarea>  <br><br>
+								<button class="btn rounded-pill btn-danger btn-form text-center dtn-block">Book A Table</button>
+							</form>
+							</div>
+						</div>
+					</div>
+			</div>
+			  <!-- gallary -->
+			  <div class="container-fluid mt-5" id="gallery" data-aos="fade-up" data-aos-duration="1000">
+				<p class=" text-secondary text-center ">GALLERY</p>
+					<h3 class="text-center   ">Check <span class="text-danger">Our Gallery  </span>  </h3>
+					<div class="container">
+						<div class="owl-carousel owl-theme">
+							
+							<div class="item">
+							<img src="./gallery-1.jpg" alt="">	
+							</div>
+							<div class="item">
+								<img src="./gallery-2.jpg" alt="">
+							</div>
+							<div class="item">
+								<img src="./gallery-3.jpg" alt="">
+							</div>
+							<div class="item">
+								<img src="./gallery-4.jpg" alt="">
+							</div>
+							<div class="item">
+								<img src="./gallery-5.jpg" alt="">
+							</div>
+							<div class="item">
+								<img src="./gallery-6.jpg" alt="">
+							</div>
+							<div class="item">
+								<img src="./gallery-7.jpg" alt="">
+							</div>
+							
+							<div class="item">
+								<img src="./gallery-8.jpg" alt="">
+							</div>
+							
+						</div>
+					</div>
+			  </div>
+	 
+		
+			  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	
+			  <script>
+				AOS.init();
+			</script>
+
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>	
+<script>
+	$('.owl-carousel').owlCarousel({
+		loop:true,
+		margin:10,
+		nav:true,
+		responsive:{
+			0:{
+				items:1
+			},
+			600:{
+				items:3
+			},
+			1000:{
+				items:3
+			}
+		}
+	})
+</script>
+
+<script>
+	var client = setInterval(clients,10);
+
+	
+	let count1 = 1;
+	
+
+	function clients(){
+		count1++;
+		document.querySelector("#number1").innerHTML = count1;
+		if (count1 == 243){
+			clearInterval(client)
+		}
+	}
+	var project = setInterval(projectDone ,1)
+	let count2 = 100;
+
+	function projectDone(){
+		count2++;
+		document.querySelector("#number2").innerHTML = count2;
+		if (count2 == 514){
+			clearInterval(project)
+		}
+	}
+	var support = setInterval(supports ,1)
+	let count3 = 800;
+
+	function supports(){
+		count3++;
+		document.querySelector("#number3").innerHTML = count3;
+		if (count3 == 1244){
+			clearInterval(support)
+		}
+	}
+	var work = setInterval(workers ,40)
+	let count4 = 0;
+
+	function workers(){
+		count4++;
+		document.querySelector("#number4").innerHTML = count4;
+		if (count4 == 44){
+			clearInterval(work)
+		}
+	}
+	
+	
+	
+	
+</script>
+</body>
+</html>

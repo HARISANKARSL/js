@@ -1,0 +1,341 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+vertical-align: middle;
+    justify-content: center;
+    background-color: aqua;
+    font-family: 'Roboto', sans-serif;
+}
+.wrapper{
+  background-color: white; 
+  min-width: 28%;
+  height: auto;
+  position: absolute;
+  top: 60px; 
+  border-radius: 10px;
+  box-shadow: -1px -1px 30px -5px rgba(0,0,0,0.42);
+}
+.active{
+    filter: blur(5px);
+    
+}
+.header {
+    text-align: center;
+    margin-top: 60px;
+}
+.header h1{
+    font-family: 'Roboto', sans-serif;
+}
+.login{
+  margin: 40px;
+}
+.login-input{
+    border-bottom: 1px solid rgb(27, 26, 28);
+    width: 350px;
+    height: 60px;
+    margin-top: 20px;
+    transition: .1s ease-in-out;  
+    
+}
+.error{
+position: absolute;
+right:10px;
+}
+
+
+.login-input input{
+    border: none;
+    outline: none;
+    margin-top: 10px;
+    margin-left: 15px;
+height: 20px;   
+}
+.frgt {
+    text-align: end;
+    margin-right: 25px;
+   margin-top: 10px;  
+}
+.frgt a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #000;  
+}
+.login-btn{
+    text-align: center;
+}
+.login-btn button{
+    width: 80%;
+    height: 40px;
+    margin-top: 20px;
+    border-radius: 25px;
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    background: linear-gradient(158deg, rgba(126,237,230,1) 27%, rgba(241,135,246,1) 75%);
+    cursor: pointer;
+}
+.lgn-icon{
+    text-align: center;
+    margin-top: 30px;
+}
+.lgn-icon p{
+    font-size: 13px;
+}
+.icons ul{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px; 
+}.icons ul li{
+    list-style: none;
+    margin: 10px;
+    font-size: 20px;
+    background-color: rgb(16, 175, 175);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: #fff;
+   cursor: pointer;  
+}
+.icons ul li a{
+    text-decoration: none;    
+}
+.icons ul li:first-child{
+    background-color: rgb(48, 63, 139);
+}
+.icons ul li:nth-child(2){
+    background-color: rgb(44, 178, 232);
+}
+.icons ul li:nth-child(3){
+    background-color: rgb(216, 87, 28);
+}
+.footer{
+    text-align: center;
+   margin: 50px;
+}
+.footer p{
+    color: gray;
+    font-size: 15px;
+}
+.footer a{
+    margin-top: 15px;
+    color: #000;
+    text-decoration: none;
+}
+.msg{
+    text-align: center; 
+    padding: 10px;
+    color: red;
+    animation:  anmate 1s ease-out;
+    display: none;
+
+}
+
+@keyframes animate {
+    0%{
+        transform: scale(0.1);
+    }
+    50%{
+        transform: scale(0.5);
+    }
+    
+    100%{
+        transform: scale(1);
+    }
+    
+    
+}
+/* frgt */
+.frgt-pss{
+    position: absolute;
+    top: 30%;
+   left: 250px;
+    background-color: rgb(255, 255, 255);
+    width: 500px;
+    height: 320px;
+    border-radius: 10px;
+    box-shadow: -1px -1px 30px -5px rgba(0,0,0,0.42);
+   display: none;
+   transition: .4s;
+    
+ 
+}
+.login-msg{
+    width: 350px;
+color: #bb342c;
+border: 1px solid #bb342c; 
+background-color:rgba(230, 98, 98, 0.168);
+    height: 40px;
+
+position: relative;
+left: 60px;
+text-align: start;
+display: flex;
+align-items: center;
+display:none;
+
+
+    
+}
+.login-msg p{
+    padding: 20px;
+   
+}
+.frgt-header h1{
+    text-align: center;
+    margin-top: 30px;
+    color: #000;
+    font-weight: 500;
+}
+.close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 20px;
+    font-weight: bold;
+    background: rgb(156, 152, 152);
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+}
+.frgt-header h3{
+    text-align: center;
+    margin-top: 20px;
+    color: #000;
+    font-weight: 400;
+}
+.frgt-imput {
+ text-align: center;
+ margin-top: 25px;
+
+}
+.frgt-imput  input{
+    width: 350px;
+    height: 50px;
+  font-size: 20px;
+  color: #000;
+  outline: none;
+  padding: 15px;
+}
+.frgt-btn{
+    text-align: center;
+    margin-top: 25px;
+}
+.frgt-btn  button{
+    width: 350px;
+    height: 50px;
+  font-size: 20px;
+  color: #000;
+  outline: none;
+  padding: 15px;
+  cursor: pointer;
+  background-color: rgb(123, 147, 237);
+  border: none;
+  color: #fff;
+
+}
+/*  */
+.rset-pss{
+    position: absolute;
+    top: 150px;
+   right: 300px;
+    background-color: rgb(255, 255, 255);
+    min-width: 450px;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: -1px -1px 30px -5px rgba(0,0,0,0.42);
+    display: none;
+ 
+    
+}
+.rset-header h1{
+    text-align: center;
+    margin-top: 30px;
+    color: #000;
+    font-weight: 500;
+}
+.rset-close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 20px;
+    font-weight: bold;
+    background: rgb(156, 152, 152);
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+}
+.rset-header p{
+    text-align: center;
+  background-color: rgb(205, 251, 220);
+  position: relative;
+ left: 50px;
+  width: 350px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  color: rgb(5, 85, 36);
+}
+.rset-imput {
+ text-align: center;
+ margin-top: 25px;
+
+}
+.rset-imput  input{
+    width: 350px;
+    height: 50px;
+  font-size: 20px;
+  color: #000;
+  outline: none;
+  padding: 15px;
+}
+.rset-btn{
+    text-align: center;
+    margin-top:30px;
+}
+.rset-btn  button{
+    width: 350px;
+    height: 50px;
+  font-size: 20px;
+  color: #000;
+  outline: none;
+  padding: 15px;
+  cursor: pointer;
+  background-color: rgb(123, 147, 237);
+  border: none;
+  color: #fff;
+
+}
+.loginmsg{
+    width: 350px;
+    color: #bb342c;
+    border: 1px solid #bb342c; 
+    background-color:rgba(230, 98, 98, 0.168);
+        height: 40px;
+    padding: 20px;
+    position: relative;
+    left: 50px;
+    text-align: start;
+    display: flex;
+    align-items: center;
+  display: none;
+    margin-top: 10px;
+       
+}
+/*  */
