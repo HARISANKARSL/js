@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: aqua;
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 700px;
+    height: auto;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+}
+.name{
+    width: 100%;
+    position: relative;
+    margin-bottom: 15px;
+}
+.name input{
+    width: 100%;
+   padding: 20px;
+   border: none;
+   outline: none;
+   background-color: rgb(233, 229, 223);
+   border-radius: 25px;
+}
+.name input::placeholder{
+    font-weight: 500;
+    font-size: 15px;
+}
+.email{
+    width: 100%;
+    position: relative;
+    margin-bottom: 15px;
+}
+.email input{
+    width: 100%;
+   padding: 20px;
+   border: none;
+   outline: none;
+   background-color: rgb(233, 229, 223);
+   border-radius: 25px;
+}
+.email input::placeholder{
+    font-weight: 500;
+    font-size: 15px;
+}
+.msg-box{
+    width: 100%;
+    position: relative;
+    margin-bottom: 15px;
+}
+.msg-box textarea{
+    width: 100%;
+   padding: 20px;
+   border: none;
+   outline: none;
+   background-color: rgb(233, 229, 223);
+   border-radius: 25px; 
+}
+.msg-box textarea::placeholder{
+    font-weight: 500;
+    font-size: 15px;
+}
+.button{
+    width: 100%;
+}.button button{
+    width: 100%;
+    padding: 10px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    color: white;
+    background-color: rgb(73, 79, 77);
+}
+.message{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px;
+}
+.message .sucess{
+    position: absolute;
+    color: green;
+    display: none;
+    animation: button .3s linear;
+}
+.message .danger{
+    color: red;
+    display: none;
+    animation: button .3s linear;
+    
+}
+@keyframes button{
+0%{
+    transform: scale(0.1);
+}
+50%{
+    transform: scale(0.5);
+}
+100%{
+    transform: scale(1);
+}
+}

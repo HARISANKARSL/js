@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>kep in touch</h1>
+            <div class="name">
+                <input type="text"  placeholder="name" id="name">
+            </div>
+            <div class="email">
+                <input type="text"  placeholder="email" id="email">
+            </div>
+            <div class="msg-box">
+               <textarea name="" id="msg" placeholder="message" cols="30" rows="10"></textarea>
+            </div>
+            <div class="button">
+                <button id="btn" onclick="message()">send</button>
+            </div>
+            <div class="message">
+                <div id="success" class="sucess" >your message successfully sent</div>
+                <div id="fail" class="danger">field cant be empty</div>
+            </div>
+        </div>
+        
+    </div>
+    <script>
+function message(){
+   var name=document.getElementById('name');
+   var email = document.getElementById('email');
+   var msg = document.getElementById('msg');
+   const success=document.getElementById('success');
+   const danger=document.getElementById('fail');
+if(name.value === "" || email.value === "" || msg.value=== ""){
+danger.style.display="block"
+}
+else{
+    setTimeout(()=>{
+        name.value="";
+        email.value="";
+        msg.value="";
+    },
+    2000);
+    success.style.display="block";
+}
+setTimeout (()=>{
+danger.style.display="none";
+success.style.display="none";
+},
+4000)
+}
+    </script>
+</body>
+</html>
